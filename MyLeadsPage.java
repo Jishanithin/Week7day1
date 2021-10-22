@@ -22,5 +22,10 @@ public class MyLeadsPage extends ProjectSpecificImplement{
 		
 
 	}
+	public MergeLeadsPage clickMergeLeads() {
+		driver.findElement(By.linkText("Merge Leads")).click();
+		return new MergeLeadsPage(driver);
+
+	}
 	
 }
